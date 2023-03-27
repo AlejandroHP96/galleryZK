@@ -1,23 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
+import Button from '../../atomic/button/Button'
+import '../App/App.css'
+import { CiMenuBurger } from 'react-icons/ci'
 
 const HeaderContainer = styled.div`
 	display: flex;
-	justify-content: center;
-	aling-item: center;
-	background-color: #f2f;
 	width: 100%;
-	margin: 0;
+	height: 70px;
+`
+const ContainerButtonMenu = styled.div`
+	width: 3%;
+	background-color: red;
 `
 
-const TitleText = styled.p`
-	padding: 10px;
+const ContainerNav = styled.div`
+	width: 97%;
+	background-color: blue;
 `
 
 const Header = () => {
+	const [showMenu, setShowMenu] = useState(false)
+
+	console.log(showMenu)
 	return (
 		<HeaderContainer>
-			<TitleText>Header</TitleText>
+			<ContainerButtonMenu></ContainerButtonMenu>
+			<ContainerNav></ContainerNav>
+			{/* <div className={`menu ${showMenu ? 'open' : ''}`}>
+				<ButtonContainerOpen onClick={() => setShowMenu(!showMenu)}>
+					<CiMenuBurger size={30} />
+				</ButtonContainerOpen>
+			</div> */}
 		</HeaderContainer>
 	)
 }

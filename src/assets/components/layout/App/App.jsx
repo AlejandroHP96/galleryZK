@@ -1,10 +1,16 @@
+import styled from 'styled-components'
 import Header from '../header/Header'
+
+const ContainerAll = styled.div`
+	width: 100%;
+	background-color: #a9f6ff;
+`
 
 function App() {
 	return (
-		<div>
+		<ContainerAll>
 			<Header />
-		</div>
+		</ContainerAll>
 	)
 }
 
