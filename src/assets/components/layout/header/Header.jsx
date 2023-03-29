@@ -2,21 +2,25 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import Button from '../../atomic/button/Button'
 import '../App/App.css'
-import { CiMenuBurger } from 'react-icons/ci'
 
 const HeaderContainer = styled.div`
 	display: flex;
 	width: 100%;
+	justify-content: end;
 	height: 70px;
 `
-const ContainerButtonMenu = styled.div`
-	width: 3%;
-	background-color: red;
+
+const HeaderNavbar = styled.div`
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 30%;
 `
 
-const ContainerNav = styled.div`
-	width: 97%;
-	background-color: blue;
+const TitleOption = styled.a`
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
 `
 
 const Header = () => {
@@ -25,13 +29,11 @@ const Header = () => {
 	console.log(showMenu)
 	return (
 		<HeaderContainer>
-			<ContainerButtonMenu></ContainerButtonMenu>
-			<ContainerNav></ContainerNav>
-			{/* <div className={`menu ${showMenu ? 'open' : ''}`}>
-				<ButtonContainerOpen onClick={() => setShowMenu(!showMenu)}>
-					<CiMenuBurger size={30} />
-				</ButtonContainerOpen>
-			</div> */}
+			<HeaderNavbar>
+				<TitleOption href='#'>Inicio</TitleOption>
+				<TitleOption href='#'>Fotografía</TitleOption>
+				<TitleOption href='#'>Sobre Mi</TitleOption>
+			</HeaderNavbar>
 		</HeaderContainer>
 	)
 }

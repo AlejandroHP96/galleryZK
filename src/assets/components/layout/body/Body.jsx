@@ -3,7 +3,7 @@ import React from 'react'
 const Body = () => {
 	return (
 		<div>
-			<p>Bodys</p>
+			<p>Body</p>
 		</div>
 	)
 }
