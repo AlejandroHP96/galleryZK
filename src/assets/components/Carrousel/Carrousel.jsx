@@ -18,7 +18,6 @@ const ImageComp = styled.img`
 `
 
 const ContainerCarousel = styled.div`
-	margin-top: 100px;
 	width: 70%;
 	height: 300px;
 	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;

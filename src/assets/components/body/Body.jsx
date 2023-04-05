@@ -9,10 +9,15 @@ const Body = () => {
 		margin-top: 30px;
 	`
 
-	const infoContainer = styled.div``
+	const TitleCarousel = styled.p`
+		font-size: 50px;
+		text-align: center;
+		text-decoration: underline;
+	`
 
 	return (
 		<ContainerAllBody>
+			<TitleCarousel>Last Update</TitleCarousel>
 			<CarouselComponent />
 		</ContainerAllBody>
 	)

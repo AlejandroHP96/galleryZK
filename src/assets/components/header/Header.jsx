@@ -1,7 +1,26 @@
 import React, { useState } from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import LogoSinFondo from '../../image/Logo_Negro_sin_fondo.png'
 import '../App/App.css'
+
+// css
+
+const scaleImg = keyframes`
+
+  0% 
+  {
+    transform: scale(1);
+  }
+  50% 
+  {
+    transform: scale(1.3);
+  }
+  100% 
+  {
+    transform: scale(1);
+  }
+
+`
 
 const HeaderContainer = styled.div`
 	display: flex;
@@ -24,9 +43,8 @@ const Logo = styled.img`
 	width: 100px;
 	height: 100px;
 	transition: 0.5s;
-	&:hover {
-		transform: scale(1.25);
-	}
+
+	animation: ${scaleImg} 15s infinite;
 
 	@media (max-width: 830px) {
 		width: 70px;
@@ -68,6 +86,8 @@ const TitleOption = styled.a`
 		text-decoration: underline;
 	}
 `
+
+// Component Header
 
 const Header = () => {
 	const [showMenu, setShowMenu] = useState(false)
