@@ -1,14 +1,6 @@
 import React from 'react'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
-import Image1 from '../../image/testImage/image1.jpg'
-import Image2 from '../../image/testImage/image2.jpg'
-import Image3 from '../../image/testImage/image3.jpg'
-import Image4 from '../../image/testImage/image4.jpg'
-import Image5 from '../../image/testImage/image5.jpg'
-import Image6 from '../../image/testImage/image6.jpg'
-import Image7 from '../../image/testImage/image7.jpg'
-import Image8 from '../../image/testImage/image8.jpg'
 import styled from 'styled-components'
 
 const ImageComp = styled.img`
@@ -38,14 +30,38 @@ const responsive = {
 const handleDragStart = (e) => e.preventDefault()
 
 const items = [
-	<ImageComp src={Image1} onDragStart={handleDragStart} />,
-	<ImageComp src={Image2} onDragStart={handleDragStart} />,
-	<ImageComp src={Image3} onDragStart={handleDragStart} />,
-	<ImageComp src={Image4} onDragStart={handleDragStart} />,
-	<ImageComp src={Image5} onDragStart={handleDragStart} />,
-	<ImageComp src={Image6} onDragStart={handleDragStart} />,
-	<ImageComp src={Image7} onDragStart={handleDragStart} />,
-	<ImageComp src={Image8} onDragStart={handleDragStart} />,
+	<ImageComp
+		src='src/assets/image/testImage/image1.jpg'
+		onDragStart={handleDragStart}
+	/>,
+	<ImageComp
+		src='src/assets/image/testImage/image2.jpg'
+		onDragStart={handleDragStart}
+	/>,
+	<ImageComp
+		src='src/assets/image/testImage/image3.jpg'
+		onDragStart={handleDragStart}
+	/>,
+	<ImageComp
+		src='src/assets/image/testImage/image4.jpg'
+		onDragStart={handleDragStart}
+	/>,
+	<ImageComp
+		src='src/assets/image/testImage/image5.jpg'
+		onDragStart={handleDragStart}
+	/>,
+	<ImageComp
+		src='src/assets/image/testImage/image6.jpg'
+		onDragStart={handleDragStart}
+	/>,
+	<ImageComp
+		src='src/assets/image/testImage/image7.jpg'
+		onDragStart={handleDragStart}
+	/>,
+	<ImageComp
+		src='src/assets/image/testImage/image8.jpg'
+		onDragStart={handleDragStart}
+	/>,
 ]
 
 const Carrousel = () => {

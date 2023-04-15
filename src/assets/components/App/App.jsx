@@ -1,18 +1,19 @@
-import styled from 'styled-components'
 import Header from '../header/Header'
-import Body from '../body/Body'
+import Principal from '../Screens/Principal/Principal'
 
-const ContainerAll = styled.div`
-	width: 100%;
-	height: 100vh;
-`
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+import Carrousel from '../Carrousel/Carrousel'
+import Photografy from '../Screens/Photografy/Photografy'
 
 const App = () => {
 	return (
-		<ContainerAll>
+		<Router>
 			<Header />
-			<Body />
-		</ContainerAll>
+			<Routes>
+				<Route path='/galleryZK' element={<Principal />} />
+				<Route path='/galleryZK/photografy' element={<Photografy />} />
+			</Routes>
+		</Router>
 	)
 }
 

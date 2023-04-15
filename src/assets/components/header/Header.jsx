@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import styled, { keyframes } from 'styled-components'
 import LogoSinFondo from '../../image/Logo_Negro_sin_fondo.png'
-import '../App/App.css'
+import { Link } from 'react-router-dom'
+import '../../theme/styleGlobal.css'
 
 // css
 
@@ -80,11 +81,7 @@ const HeaderNavbar = styled.div`
 const TitleOption = styled.a`
 	font-size: 20px;
 	color: black;
-	text-decoration: none;
 	padding: 0 20px 0 20px;
-	&:hover {
-		text-decoration: underline;
-	}
 `
 
 // Component Header
@@ -104,9 +101,21 @@ const Header = () => {
 			</ContainerInfoLogo>
 
 			<HeaderNavbar>
-				<TitleOption href='#'>Inicio</TitleOption>
-				<TitleOption href='#'>Fotografía</TitleOption>
-				<TitleOption href='#'>Sobre Mi</TitleOption>
+				<TitleOption>
+					<Link className='styleLink' to={'/galleryZK'}>
+						Inicio
+					</Link>
+				</TitleOption>
+				<TitleOption>
+					<Link className='styleLink' to={'/galleryZK/photografy'}>
+						Fotografía
+					</Link>
+				</TitleOption>
+				<TitleOption>
+					<Link className='styleLink' to={'/galleryZK/aboutMe'}>
+						Sobre Mi
+					</Link>
+				</TitleOption>
 			</HeaderNavbar>
 		</HeaderContainer>
 	)
