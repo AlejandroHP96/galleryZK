@@ -10,8 +10,8 @@ const App = () => {
 		<Router>
 			<Header />
 			<Routes>
-				<Route path='/galleryZK' element={<Principal />} />
-				<Route path='/galleryZK/photografy' element={<Photografy />} />
+				<Route path='/' element={<Principal />} />
+				<Route path='//photografy' element={<Photografy />} />
 			</Routes>
 		</Router>
 	)

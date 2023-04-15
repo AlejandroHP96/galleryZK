@@ -102,12 +102,12 @@ const Header = () => {
 
 			<HeaderNavbar>
 				<TitleOption>
-					<Link className='styleLink' to={'/galleryZK'}>
+					<Link className='styleLink' to={'/'}>
 						Inicio
 					</Link>
 				</TitleOption>
 				<TitleOption>
-					<Link className='styleLink' to={'/galleryZK/photografy'}>
+					<Link className='styleLink' to={'/photografy'}>
 						Fotografía
 					</Link>
 				</TitleOption>
