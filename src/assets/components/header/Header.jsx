@@ -12,7 +12,7 @@ const scaleImg = keyframes`
   {
     transform: scale(1);
   }
-  50% 
+  30% 
   {
     transform: scale(1.3);
   }
@@ -28,6 +28,7 @@ const HeaderContainer = styled.div`
 	width: 100%;
 	justify-content: space-between;
 	height: 60px;
+	margin-bottom: 50px;
 `
 
 const ContainerInfoLogo = styled.div`
@@ -45,7 +46,7 @@ const Logo = styled.img`
 	height: 100px;
 	transition: 0.5s;
 
-	animation: ${scaleImg} 15s infinite;
+	animation: ${scaleImg} 5s infinite;
 
 	@media (max-width: 830px) {
 		width: 70px;
@@ -78,18 +79,9 @@ const HeaderNavbar = styled.div`
 	width: 33%;
 `
 
-const TitleOption = styled.a`
-	font-size: 20px;
-	color: black;
-	padding: 0 20px 0 20px;
-`
-
 // Component Header
 
 const Header = () => {
-	const [showMenu, setShowMenu] = useState(false)
-
-	console.log(showMenu)
 	return (
 		<HeaderContainer>
 			<NameContainer>
@@ -101,21 +93,17 @@ const Header = () => {
 			</ContainerInfoLogo>
 
 			<HeaderNavbar>
-				<TitleOption>
-					<Link className='styleLink' to={'/'}>
-						Inicio
-					</Link>
-				</TitleOption>
-				<TitleOption>
-					<Link className='styleLink' to={'/photografy'}>
-						Fotografía
-					</Link>
-				</TitleOption>
-				<TitleOption>
-					<Link className='styleLink' to={'/galleryZK/aboutMe'}>
-						Sobre Mi
-					</Link>
-				</TitleOption>
+				<Link className='styleLink' to={'/'}>
+					Inicio
+				</Link>
+
+				<Link className='styleLink' to={'/photografy'}>
+					Fotografía
+				</Link>
+
+				<Link className='styleLink' to={'/galleryZK/aboutMe'}>
+					Sobre Mi
+				</Link>
 			</HeaderNavbar>
 		</HeaderContainer>
 	)
