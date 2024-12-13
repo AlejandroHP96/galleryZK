@@ -30,38 +30,14 @@ const responsive = {
 const handleDragStart = (e) => e.preventDefault()
 
 const items = [
-	<ImageComp
-		src='src/assets/image/testImage/image1.jpg'
-		onDragStart={handleDragStart}
-	/>,
-	<ImageComp
-		src='src/assets/image/testImage/image2.jpg'
-		onDragStart={handleDragStart}
-	/>,
-	<ImageComp
-		src='src/assets/image/testImage/image3.jpg'
-		onDragStart={handleDragStart}
-	/>,
-	<ImageComp
-		src='src/assets/image/testImage/image4.jpg'
-		onDragStart={handleDragStart}
-	/>,
-	<ImageComp
-		src='src/assets/image/testImage/image5.jpg'
-		onDragStart={handleDragStart}
-	/>,
-	<ImageComp
-		src='src/assets/image/testImage/image6.jpg'
-		onDragStart={handleDragStart}
-	/>,
-	<ImageComp
-		src='src/assets/image/testImage/image7.jpg'
-		onDragStart={handleDragStart}
-	/>,
-	<ImageComp
-		src='src/assets/image/testImage/image8.jpg'
-		onDragStart={handleDragStart}
-	/>,
+	<ImageComp src='/assets/image1.png' onDragStart={handleDragStart} />,
+	<ImageComp src='/assets/image2.jpg' onDragStart={handleDragStart} />,
+	<ImageComp src='/assets/image3.jpg' onDragStart={handleDragStart} />,
+	<ImageComp src='/assets/image4.jpg' onDragStart={handleDragStart} />,
+	<ImageComp src='/assets/image5.jpg' onDragStart={handleDragStart} />,
+	<ImageComp src='/assets/image6.jpg' onDragStart={handleDragStart} />,
+	<ImageComp src='/assets/image7.jpg' onDragStart={handleDragStart} />,
+	<ImageComp src='/assets/image8.jpg' onDragStart={handleDragStart} />,
 ]
 
 const Carrousel = () => {
