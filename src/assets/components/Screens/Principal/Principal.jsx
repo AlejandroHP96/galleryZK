@@ -29,12 +29,12 @@ const Principal = () => {
 			<ContainerCard>
 				<RedirectionCards
 					rute={'/galleryZK/photografy'}
-					imageRute={'/assets/paula.png'}
+					imageRute={`${import.meta.env.BASE_URL}/assets/paula.png`}
 					titleCard={'Fotografía'}
 				/>
 				<RedirectionCards
-					rute={'/aboutMe}'}
-					imageRute={'/assets/sergio.png'}
+					rute={'galleryZK/aboutMe'}
+					imageRute={`${import.meta.env.BASE_URL}/assets/sergio.png`}
 					titleCard={'Sobre Mi'}
 				/>
 			</ContainerCard>

@@ -172,7 +172,7 @@ Error generating stack: `+o.message+`
 	display: flex;
 	justify-content: space-evenly;
 	margin: 50px 0;
-`,ry=()=>fn(ey,{children:[Q(ty,{children:"Last Update"}),Q(G0,{}),fn(ny,{children:[Q(Lc,{rute:"/galleryZK/photografy",imageRute:"/assets/paula.png",titleCard:"Fotografía"}),Q(Lc,{rute:"/aboutMe}",imageRute:"/assets/sergio.png",titleCard:"Sobre Mi"})]})]}),iy=Ee.div`
+`,ry=()=>fn(ey,{children:[Q(ty,{children:"Last Update"}),Q(G0,{}),fn(ny,{children:[Q(Lc,{rute:"/galleryZK/photografy",imageRute:"/galleryZK//assets/paula.png",titleCard:"Fotografía"}),Q(Lc,{rute:"galleryZK/aboutMe",imageRute:"/galleryZK//assets/sergio.png",titleCard:"Sobre Mi"})]})]}),iy=Ee.div`
 	display: flex;
 	justify-content: center;
 `,oy=Ee.div`
