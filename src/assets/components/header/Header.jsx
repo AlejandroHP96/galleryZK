@@ -93,15 +93,15 @@ const Header = () => {
 			</ContainerInfoLogo>
 
 			<HeaderNavbar>
-				<Link className='styleLink' to={'/galleryZK'}>
+				<Link className='styleLink' to={'/galleryZK/'}>
 					Inicio
 				</Link>
 
-				<Link className='styleLink' to={'/galleryZK/photografy'}>
+				<Link className='styleLink' to={'/galleryZK/photografy/'}>
 					Fotografía
 				</Link>
 
-				<Link className='styleLink' to={'/galleryZK/aboutMe'}>
+				<Link className='styleLink' to={'/galleryZK/aboutMe/'}>
 					Sobre Mi
 				</Link>
 			</HeaderNavbar>
