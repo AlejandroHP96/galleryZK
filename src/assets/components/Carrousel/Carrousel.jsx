@@ -30,14 +30,38 @@ const responsive = {
 const handleDragStart = (e) => e.preventDefault()
 
 const items = [
-	<ImageComp src='/assets/image1.png' onDragStart={handleDragStart} />,
-	<ImageComp src='/assets/image2.png' onDragStart={handleDragStart} />,
-	<ImageComp src='/assets/image3.png' onDragStart={handleDragStart} />,
-	<ImageComp src='/assets/image4.png' onDragStart={handleDragStart} />,
-	<ImageComp src='/assets/image5.png' onDragStart={handleDragStart} />,
-	<ImageComp src='/assets/image6.png' onDragStart={handleDragStart} />,
-	<ImageComp src='/assets/image7.png' onDragStart={handleDragStart} />,
-	<ImageComp src='/assets/image8.png' onDragStart={handleDragStart} />,
+	<ImageComp
+		src={`${import.meta.env.BASE_URL}assets/image1.png`}
+		onDragStart={handleDragStart}
+	/>,
+	<ImageComp
+		src={`${import.meta.env.BASE_URL}assets/image2.png`}
+		onDragStart={handleDragStart}
+	/>,
+	<ImageComp
+		src={`${import.meta.env.BASE_URL}assets/image3.png`}
+		onDragStart={handleDragStart}
+	/>,
+	<ImageComp
+		src={`${import.meta.env.BASE_URL}assets/image4.png`}
+		onDragStart={handleDragStart}
+	/>,
+	<ImageComp
+		src={`${import.meta.env.BASE_URL}assets/image5.png`}
+		onDragStart={handleDragStart}
+	/>,
+	<ImageComp
+		src={`${import.meta.env.BASE_URL}assets/image6.png`}
+		onDragStart={handleDragStart}
+	/>,
+	<ImageComp
+		src={`${import.meta.env.BASE_URL}assets/image7.png`}
+		onDragStart={handleDragStart}
+	/>,
+	<ImageComp
+		src={`${import.meta.env.BASE_URL}assets/image8.png`}
+		onDragStart={handleDragStart}
+	/>,
 ]
 
 const Carrousel = () => {
