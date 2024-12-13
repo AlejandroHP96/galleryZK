@@ -2,7 +2,6 @@ import Header from '../header/Header'
 import Principal from '../Screens/Principal/Principal'
 
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
-import Carrousel from '../Carrousel/Carrousel'
 import Photografy from '../Screens/Photografy/Photografy'
 
 const App = () => {

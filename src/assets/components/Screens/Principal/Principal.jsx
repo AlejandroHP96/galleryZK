@@ -28,7 +28,7 @@ const Principal = () => {
 			<Carrousel />
 			<ContainerCard>
 				<RedirectionCards
-					rute={'/photografy'}
+					rute={'/galleryZK/photografy'}
 					imageRute={'/assets/paula.png'}
 					titleCard={'Fotografía'}
 				/>

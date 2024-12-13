@@ -93,11 +93,11 @@ const Header = () => {
 			</ContainerInfoLogo>
 
 			<HeaderNavbar>
-				<Link className='styleLink' to={'/'}>
+				<Link className='styleLink' to={'/galleryZK'}>
 					Inicio
 				</Link>
 
-				<Link className='styleLink' to={'/photografy'}>
+				<Link className='styleLink' to={'/galleryZK/photografy'}>
 					Fotografía
 				</Link>
 
