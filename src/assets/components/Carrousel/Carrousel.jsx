@@ -31,13 +31,13 @@ const handleDragStart = (e) => e.preventDefault()
 
 const items = [
 	<ImageComp src='/assets/image1.png' onDragStart={handleDragStart} />,
-	<ImageComp src='/assets/image2.jpg' onDragStart={handleDragStart} />,
-	<ImageComp src='/assets/image3.jpg' onDragStart={handleDragStart} />,
-	<ImageComp src='/assets/image4.jpg' onDragStart={handleDragStart} />,
-	<ImageComp src='/assets/image5.jpg' onDragStart={handleDragStart} />,
-	<ImageComp src='/assets/image6.jpg' onDragStart={handleDragStart} />,
-	<ImageComp src='/assets/image7.jpg' onDragStart={handleDragStart} />,
-	<ImageComp src='/assets/image8.jpg' onDragStart={handleDragStart} />,
+	<ImageComp src='/assets/image2.png' onDragStart={handleDragStart} />,
+	<ImageComp src='/assets/image3.png' onDragStart={handleDragStart} />,
+	<ImageComp src='/assets/image4.png' onDragStart={handleDragStart} />,
+	<ImageComp src='/assets/image5.png' onDragStart={handleDragStart} />,
+	<ImageComp src='/assets/image6.png' onDragStart={handleDragStart} />,
+	<ImageComp src='/assets/image7.png' onDragStart={handleDragStart} />,
+	<ImageComp src='/assets/image8.png' onDragStart={handleDragStart} />,
 ]
 
 const Carrousel = () => {

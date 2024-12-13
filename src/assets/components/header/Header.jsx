@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled, { keyframes } from 'styled-components'
-import LogoSinFondo from '../../image/Logo_Negro_sin_fondo.png'
+import LogoSinFondo from '/assets/Logo_Negro_sin_fondo.png'
 import { Link } from 'react-router-dom'
 import '../../theme/styleGlobal.css'
 
@@ -38,7 +38,7 @@ const ContainerInfoLogo = styled.div`
 
 	@media (max-width: 630px) {
 		justify-content: start;
-	} ;
+	}
 `
 
 const Logo = styled.img`
@@ -59,7 +59,7 @@ const NameContainer = styled.div`
 
 	@media (max-width: 630px) {
 		display: none;
-	} ;
+	}
 `
 
 const Name = styled.p`
